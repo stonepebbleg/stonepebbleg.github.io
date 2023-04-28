@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Capstone';
+    src: url('../font/capstone-regular.ttf');
+}
+
+:root {
+    --accent-color: #d398a5;
+    --accent-color-dark: #a56d6e;
+    --primary-color: #90afc7;
+}
+
+* {
+
+    font-family: Capstone;
+    font-size: 25pt;
+}
+
+.bg-cosmic {
+    /*background-image: radial-gradient(farthest-side at top right, #141a26 0%, #192a3e 50%, #386084 100%);*/
+    /*background-image: url("https://placekitten.com/200/200");*/
+    background-image: url('../img/bg.png');
+    color: var(--primary-color);
+}
+
+h1.title {
+    color: var(--accent-color);
+    letter-spacing: 0.05em;
+}
+
+body {
+    height: 100vh;
+}
+
+div.side-beam {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 5%;
+    border-radius: 100px;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
