@@ -1,6 +1,11 @@
 @font-face {
+    font-family: 'Capstone 22';
+    src: url('./../font/capstone-regular.ttf');
+}
+
+@font-face {
     font-family: 'Starry Comic';
-    src: url('../font/StarryComic-regular.ttf');
+    src: url('./../font/StarryComic-Regular.ttf');
 }
 
 :root {
@@ -10,9 +15,29 @@
 }
 
 * {
+    font-family: 'Capstone 22';
+    font-size: 40pt;
+}
 
-    font-family: Starry Comic;
-    font-size: 25pt;
+.font-starry-comic {
+    font-family: 'Starry Comic';
+}
+
+.font-capstone {
+    font-family: 'Capstone 22';
+}
+
+a#email {
+    text-decoration: none;
+    padding-bottom: 0.075rem;
+    border-bottom: solid 1pt;
+}
+
+a#email > span.at {
+    font-family: 'Starry Comic';
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.25rem;
 }
 
 .bg-cosmic {
