@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @font-face {
     font-family: 'Capstone 22';
     src: url('./../font/capstone-regular.ttf');
@@ -13,6 +15,13 @@
     --accent-color-dark: #a56d6e;
     --primary-color: #90afc7;
 }
+
+.font-dosis {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
 
 * {
     font-family: 'Capstone 22';
@@ -35,21 +44,39 @@ a#email {
 
 a#email > span.at {
     font-family: 'Starry Comic';
-    font-size: 1.5rem;
+    font-size: 0.75rem;
     position: relative;
-    top: 0.25rem;
+    top: 0.125rem;
 }
 
 .bg-cosmic {
     /*background-image: radial-gradient(farthest-side at top right, #141a26 0%, #192a3e 50%, #386084 100%);*/
     /*background-image: url("https://placekitten.com/200/200");*/
     background-image: url('../img/bg.png');
+    background-attachment: fixed;
     color: var(--primary-color);
 }
 
-h1.title {
+.content-area {
+    background-color: #0008;
+}
+
+.site-container {
+    height: 100vh;
+}
+
+.nav-area {
+    border-right: 0.125em solid #fff1;
+    box-shadow: black 0px 0px 50px;
+}
+
+.title {
     color: var(--accent-color);
     letter-spacing: 0.05em;
+}
+
+.divider-title {
+    font-size: 0.5rem;
 }
 
 body {
@@ -59,9 +86,98 @@ body {
 div.side-beam {
     background-color: var(--primary-color);
     width: 100%;
-    height: 5%;
+    height: 2pt;
     border-radius: 100px;
 }
+
+.nav-works > ul.list-group {
+    /* border-left: 0.06125em solid var(--primary-color);
+    margin-left: 0.5em;
+    padding-left: 0em; */
+    /* --bg-list-group-bg: green !important; */
+    /* font-size: 0.5em; */
+}
+
+.list-group-item {
+    background-color: #0003;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-size: 0.75em;
+    padding: 0%;
+    /* padding-left: 0.5em; */
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+i.bi {
+    font-size: 1.5em;
+    vertical-align: baseline;
+}
+
+.phone-email p, .phone-email a{
+    font-size: 0.5rem;
+}
+
+.social-media {
+
+}
+
+.content-area p {
+    font-size: 0.5rem;
+}
+
+.glry-img {
+    background-origin: padding-box;
+    background-clip: padding-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+    aspect-ratio: 1;
+    border: 0.1em solid transparent;
+}
+
+dialog#show-img-modal::backdrop {
+    background-color: black;
+    opacity: 0.75;
+}
+
+dialog#show-img-modal {
+    max-width: 100vw;
+    max-height: 100vh;
+    position: fixed;
+    background-color: #0008;
+    /* width: 100%; */
+    /* height: 100%; */
+    margin: 0%;
+    padding: 0%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+dialog#show-img-modal > img {
+    width: 100%;
+}
+  
+
+.social-media a {
+    font-size: 0.5rem;
+}
+/* 
+.nav-works > ul > li {
+    font-size: 0.75em;
+    padding-left: 0%;
+    margin-left: 0%;
+    list-style: inside;
+}
+
+.nav-works > ul > li::marker {
+    position: relative;
+    font-size: 0.5rem;
+    top: 100px;
+} */
 
 a {
     color: var(--primary-color);

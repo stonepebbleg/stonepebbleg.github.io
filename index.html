@@ -16,53 +16,86 @@
 
   <!-- Stylesheet import -->
   <link rel="stylesheet" href="./css/main.css">
+
+  <!-- GLRY script import -->
+  <script src="./js/glry.js"></script>
   
 </head>
 <body translate="no" class="bg-cosmic">
-<div class="container text-center">
-  <div class="row w-100 align-center justify-content-center m-auto">
-    <div class="col-8 rounded p-0 m-5 align-center justify-content-center">
-      <!-- Name -->
-      <h1 translate="no" class="title my-0 font-starry-comic">Pebble Stone</h1>
+<dialog id="show-img-modal">
+  <img src="" alt="">
+</dialog>
+
+<div class="container-fluid site-container p-0">
+  <div class="row w-100 h-100" style="margin: 0px;">
+    
+    <!-- Navigation -->
+    <div class="d-flex flex-column col-4 nav-area align-center">
       
+      <h4 translate="no" class="title font-starry-comic text-center mt-2 mb-0">Pebble Stone</h4>
+
       <!-- Title Divider -->
-      <div class="row my-1">
+      <div class="row mx-1 mt-0">
         <div class="col p-0 d-flex align-items-center">
           <div class="side-beam"></div>
         </div>
         <div class="col-auto d-flex px-1">
-          <h6 class="my-auto">ARTIST AND ILLUSTRATOR</h6>
+          <h6 class="divider-title my-auto">ARTIST AND ILLUSTRATOR</h6>
         </div>
         <div class="col p-0 d-flex align-items-center">
           <div class="side-beam"></div>
         </div>
       </div>
-      
-      <!-- Social Media -->
-      <div class="row justify-content-center my-2">
-        <div class="col-auto">
-          <a href="https://www.youtube.com/@popcornfluffles" target="_blank"><i class="bi bi-youtube"></i></a>
-        </div>
-        <div class="col-auto">
-          <a href="https://instagram.com/popcornfluffles" target="_blank"><i class="bi bi-instagram"></i></a>
-        </div>
-        <div class="col-auto">
-          <a href="https://twitter.com/popcornfluffles" target="_blank"><i class="bi bi-twitter"></i></a>
-        </div>
-        <div class="col-auto">
-          <a href="https://www.tiktok.com/@popcornfluffles" target="_blank"><i class="bi bi-tiktok"></i></a>
-        </div>
-      </div>
-      
-      <div class="row justify-content-center my-1">
-        <div class="col-8 p-0 d-flex align-items-center">
-          <div class="side-beam">&nbsp;</div>
+
+      <!-- Site Organization -->
+      <div class="container nav-works px-2 mb-auto">
+        <h6 class="text-center mb-0 mt-2">Works</h6>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-auto">
+            <ul class="list-group list-group-flush text-center">
+              <a href="#magic-lake" class="list-group-item">The Magic Lake Comic, 2023</a>
+              <a href="#home-series" class="list-group-item">Home Series, 2022</a>
+              <a href="#memory" class="list-group-item">Memory, 2022</a>
+              <a href="#identity" class="list-group-item">Identity, 2022</a>
+              <a href="#various-works" class="list-group-item">Various Works</a>
+            </ul>
+          </div>
+          <div class="col"></div>
         </div>
       </div>
-      
+
       <!-- Contact Info -->
-      <div class="row justify-content-center my-2">
-        <div class="col-auto">
+      <div class="ms-auto w-100 px-3">
+        <div class="row justify-content-center my-0">
+          <div class="col p-0 d-flex align-items-center">
+            <div class="side-beam">&nbsp;</div>
+          </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="row justify-content-center social-media text-center">
+          <div class="col-auto p-0 mx-auto">
+            <a class="align-middle" href="https://www.youtube.com/@popcornfluffles" target="_blank"><i class="bi bi-youtube"></i></a>
+          </div>
+          <div class="col-auto p-0 mx-auto">
+            <a class="align-middle" href="https://instagram.com/popcornfluffles" target="_blank"><i class="bi bi-instagram"></i></a>
+          </div>
+          <div class="col-auto p-0 mx-auto">
+            <a class="align-middle" href="https://twitter.com/popcornfluffles" target="_blank"><i class="bi bi-twitter"></i></a>
+          </div>
+          <div class="col-auto p-0 mx-auto">
+            <a class="align-middle" href="https://www.tiktok.com/@popcornfluffles" target="_blank"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="row justify-content-center my-0">
+          <div class="col p-0 d-flex align-items-center">
+            <div class="side-beam">&nbsp;</div>
+          </div>
+        </div>
+
+        <div class="row text-center my-0 phone-email">
           <p class="p-0 m-0 text-nowrap">
             Email: <a id="email" href="mailto:stonepebbleg@gmail.com">stonepebbleg<span class="at">@</span>gmail.com</a>
           </p>
@@ -71,6 +104,46 @@
           </p>
         </div>
       </div>
+    </div>
+
+    <!-- Content -->
+    <div class="col-8 content-area overflow-scroll">
+      <section id="#magic-lake">
+        <h4>The Magic Lake Comic (2023)</h4>
+        <p class="font-dosis">
+          Created for my Senior Capstone as an undergrad, this comic is the beginning of a larger story still in the works. The physical copies of the comics were made to be read from front to back or back to front in any order. This creates two separate but parallel stories that intertwine to tackle themes of identity, morality, and family.
+        </p>
+        <div class="row g-1">
+          <div
+            class="col-2 glry-img"
+            data-glry-title="The Prince and the Magic Lake"
+            data-glry-img="./img/portfolio/The-Magic-Lake/1.PNG"
+          ></div>
+          <div class="col-2 glry-img" data-glry-title="Page 1" data-glry-img="./img/portfolio/The-Magic-Lake/2.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 2" data-glry-img="./img/portfolio/The-Magic-Lake/3.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 3" data-glry-img="./img/portfolio/The-Magic-Lake/4.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 4" data-glry-img="./img/portfolio/The-Magic-Lake/5.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 5" data-glry-img="./img/portfolio/The-Magic-Lake/6.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 6" data-glry-img="./img/portfolio/The-Magic-Lake/7.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 7" data-glry-img="./img/portfolio/The-Magic-Lake/8.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 8" data-glry-img="./img/portfolio/The-Magic-Lake/9.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 9" data-glry-img="./img/portfolio/The-Magic-Lake/10.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 10" data-glry-img="./img/portfolio/The-Magic-Lake/11.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 11" data-glry-img="./img/portfolio/The-Magic-Lake/12.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 12" data-glry-img="./img/portfolio/The-Magic-Lake/13.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 13" data-glry-img="./img/portfolio/The-Magic-Lake/14.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 14" data-glry-img="./img/portfolio/The-Magic-Lake/15.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 15" data-glry-img="./img/portfolio/The-Magic-Lake/16.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 16" data-glry-img="./img/portfolio/The-Magic-Lake/17.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 17" data-glry-img="./img/portfolio/The-Magic-Lake/18.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 18" data-glry-img="./img/portfolio/The-Magic-Lake/19.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 19" data-glry-img="./img/portfolio/The-Magic-Lake/20.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 20" data-glry-img="./img/portfolio/The-Magic-Lake/21.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 21" data-glry-img="./img/portfolio/The-Magic-Lake/22.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 22" data-glry-img="./img/portfolio/The-Magic-Lake/23.PNG"></div>
+          <div class="col-2 glry-img" data-glry-title="Page 23" data-glry-img="./img/portfolio/The-Magic-Lake/24.JPG"></div>
+        </div>
+      </section>
     </div>
   </div>
 </div>
