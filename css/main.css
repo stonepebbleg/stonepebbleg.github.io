@@ -59,6 +59,10 @@ a#email > span.at {
 
 .content-area {
     background-color: #0008;
+    max-height: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .site-container {
