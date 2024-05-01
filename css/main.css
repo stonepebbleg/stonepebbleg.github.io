@@ -67,6 +67,7 @@ a#email > span.at {
 
 .site-container {
     height: 100vh;
+    max-height: 100vh;
 }
 
 .nav-area {
